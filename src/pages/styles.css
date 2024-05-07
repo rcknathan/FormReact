@@ -1,0 +1,22 @@
+h1 {
+    color: #fff;
+}
+
+.button {
+    background-image: linear-gradient(to right, #8BC34A, #4CAF50);
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, #6b9b3e, #39833f);
+    transform: scale(1.05); 
+}
+
+.textbutton {
+    color: #000;
+}
+
+.colorTitle {
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import "../index.css";
+import './styles.css';
 
 export default function Forms() {
   return (
@@ -17,7 +18,7 @@ export default function Forms() {
             type="text"
             id="name"
             name="name"
-            placeholder="Digite seu nome"
+            placeholder="Digite seu nome..."
             required
           />
         </div>
@@ -29,7 +30,7 @@ export default function Forms() {
             type="email"
             id="email"
             name="email"
-            placeholder="Digite seu email"
+            placeholder="Digite seu email..."
             required
           />
         </div>
@@ -41,7 +42,7 @@ export default function Forms() {
             type="number"
             id="number"
             name="age"
-            placeholder="Digite sua idade"
+            placeholder="Digite sua idade..."
             min="18"
             max="100"
             required
@@ -53,10 +54,15 @@ export default function Forms() {
           </label>
           <select id="dropdown" name="option" required>
             <option value="">Selecione uma opção</option>
-            <option value="opcao1">Ensino Fundamental</option>
-            <option value="opcao2">Ensino Médio</option>
-            <option value="opcao3">Ensino Superior</option>
-            <option value="opcao4">Pós-Graduação</option>
+            <option value="opcao1">Ensino Fundamental Incompleto</option>
+            <option value="opcao2">Ensino Fundamental Completo</option>
+            <option value="opcao3">Ensino Médio Incompleto</option>
+            <option value="opcao4">Ensino Médio Completo</option>
+            <option value="opcao5">Ensino Superior Incompleto</option>
+            <option value="opcao6">Ensino Superior Completo</option>
+            <option value="opcao7">Pós-Graduação</option>
+            <option value="opcao8">Mestrado</option>
+            <option value="opcao9">Doutorado</option>
           </select>
         </div>
         <div className="form-group">
@@ -69,7 +75,7 @@ export default function Forms() {
               value="escolha1"
               checked
             />
-            <label htmlFor="radio1">Apenas Estudo</label>
+            <label htmlFor="radio1" className="colorTitle">Somente Estudo</label>
             <br />
             <input
               type="radio"
@@ -77,7 +83,7 @@ export default function Forms() {
               name="choice"
               value="escolha2"
             />
-            <label htmlFor="radio2">Estudo e trabalho meio período</label>
+            <label htmlFor="radio1" className="colorTitle">Somente Trabalho</label>
             <br />
             <input
               type="radio"
@@ -85,7 +91,7 @@ export default function Forms() {
               name="choice"
               value="escolha3"
             />
-            <label htmlFor="radio3">Estudo e trabalho integral</label>
+            <label htmlFor="radio1" className="colorTitle">Estudo e Trabalho</label>
           </fieldset>
         </div>
         <div className="form-group">
@@ -99,7 +105,7 @@ export default function Forms() {
               name="option[]"
               value="opcao1"
             />
-            <label htmlFor="checkbox1">HTML/CSS/JS</label>
+            <label htmlFor="checkbox1" className="colorTitle">HTML/CSS/JS</label>
             <br />
             <input
               type="checkbox"
@@ -107,7 +113,7 @@ export default function Forms() {
               name="option[]"
               value="opcao2"
             />
-            <label htmlFor="checkbox2">Python</label>
+            <label htmlFor="checkbox2" className="colorTitle">Python</label>
             <br />
             <input
               type="checkbox"
@@ -115,7 +121,7 @@ export default function Forms() {
               name="option[]"
               value="opcao3"
             />
-            <label htmlFor="checkbox3">Java</label>
+            <label htmlFor="checkbox3" className="colorTitle">Java</label>
             <br />
             <input
               type="checkbox"
@@ -123,7 +129,7 @@ export default function Forms() {
               name="option[]"
               value="opcao4"
             />
-            <label htmlFor="checkbox4">C/C++/C#</label>
+            <label htmlFor="checkbox4" className="colorTitle">C/C++/C#</label>
           </fieldset>
         </div>
 
@@ -139,7 +145,7 @@ export default function Forms() {
             placeholder="Fale um pouco sobre sua experiência com programação..."
           ></textarea>
         </div>
-        <button type="submit" id="submit">
+        <button type="submit" id="submit" className="button">
           Enviar
         </button>
       </form>
